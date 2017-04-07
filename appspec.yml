@@ -9,4 +9,8 @@ permissions:
      owner: root
      group: root
      mode: 755
-     
+hooks:
+   start-stop:
+     - location: scripts/start-stop.sh
+       timeout: 30
+       runas: root    
